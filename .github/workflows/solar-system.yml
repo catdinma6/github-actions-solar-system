@@ -18,7 +18,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Checkout Repository
-          uses: actions/checkout@v
+          uses: actions/checkout@v4
 
         - name: Setup NodeJS Version
           uses: actions/setup-node@v4
@@ -29,7 +29,7 @@ jobs:
           run: npm install
     
         - name: Unit Testing
-          run: npm test
+          run: npm te
 
         - name: Archive Test Result
           if: always()  
